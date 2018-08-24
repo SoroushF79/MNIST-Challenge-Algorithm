@@ -35,7 +35,7 @@ J = nnCost(nn_params, input_layer_size, hidden_layer_size, num_labels, X, y, lam
 
 
 
-options = optimset('GradObj', 'on', 'MaxIter', 20); % 20 iterations with my computer takes ~3.5 hours so with better specifications (or a better algorithm)
+options = optimset('GradObj', 'on', 'MaxIter', 20); % 20 iterations with my computer takes ~3.5 hours so better specifications (or a better algorithm)
 % would decrease the time. 10 iterations takes ~2 hours and results in a ~81% success rate.
 
 
