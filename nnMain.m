@@ -6,7 +6,7 @@
 % 2 100 neuron hidden layers, and 10 output classes for the 10 single digit numbers.
 % The number of hidden layers and neurons in each label were, admittedly, arbitrarily chosen.
 % They were good numbers that didn't take an extraordinary amount of time to train.
-% Some credit is due to Andrew Ng and his Coursera course for the structure of the code.
+% Some credit is due to Andrew Ng and his Coursera course for inspiration of the overall structure of the nn.
 
 
 
