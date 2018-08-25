@@ -1,7 +1,7 @@
 % Written by Soroush Famili (Github: @SoroushF79) the week of Auguest 20, 2018.
 % Submission for the MNIST Challenge to train an algorithm (a neural network in this case)
-% to predict the value of handwritten numbers. Currently(8/24/18) stands at # 2129 out of 2316 on Kaggle with 
-% ~89% success rate with 20 iterations. fmincg optimization algorithm was written by Carl Edward Rasmussen (c) 1999-2002.
+% to predict the value of handwritten numbers. Currently(8/24/18) stands at # 2070 out of 2316 on Kaggle with 
+% ~92% success rate with 40 iterations. fmincg optimization algorithm was written by Carl Edward Rasmussen (c) 1999-2002.
 % The architecture of the neural network is 784 inputs (for 28 x 28 pixel images),
 % 2 100 neuron hidden layers, and 10 output classes for the 10 single digit numbers.
 % The number of hidden layers and neurons in each label were, admittedly, arbitrarily chosen.
@@ -35,7 +35,7 @@ J = nnCost(nn_params, input_layer_size, hidden_layer_size, num_labels, X, y, lam
 
 
 
-options = optimset('GradObj', 'on', 'MaxIter', 20); % 20 iterations with my computer takes ~3.5 hours so better specifications (or a better algorithm)
+options = optimset('GradObj', 'on', 'MaxIter', 40); % 40 iterations with my computer takes ~5 hours so better specifications (or a better algorithm)
 % would decrease the time. 10 iterations takes ~2 hours and results in a ~81% success rate.
 
 
